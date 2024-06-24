@@ -190,7 +190,7 @@ public class BritishAddress : KeyStringDictionary
             buffer.Append(' ');
         }
 
-        foreach (var value in new[]
+        foreach (var value in new string[]
                                   {
                                       DependentStreet, MainStreet, DoubleDependentLocality, DependentLocality, PostTown, Postcode, TraditionalCounty
                                   }.Where(value => !string.IsNullOrEmpty(value)))
