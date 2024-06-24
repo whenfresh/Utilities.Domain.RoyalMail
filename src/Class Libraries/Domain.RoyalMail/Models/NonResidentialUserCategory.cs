@@ -1,24 +1,11 @@
-﻿namespace Cavity.Models
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+
+using System.Diagnostics.CodeAnalysis;
+
+[SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonResidential", Justification = "This is not a single word.")]
+public sealed class NonResidentialUserCategory : IUserCategory
 {
-    using System.Diagnostics.CodeAnalysis;
+    public char Code => 'N';
 
-    [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonResidential", Justification = "This is not a single word.")]
-    public sealed class NonResidentialUserCategory : IUserCategory
-    {
-        public char Code
-        {
-            get
-            {
-                return 'N';
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return "Non-Residential";
-            }
-        }
-    }
+    public string Name => "Non-Residential";
 }

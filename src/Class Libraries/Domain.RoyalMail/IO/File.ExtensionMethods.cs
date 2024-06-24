@@ -1,19 +1,15 @@
-﻿namespace Cavity.IO
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.IO;
+
+using WhenFresh.Utilities.Core.IO;
+using WhenFresh.Utilities.Domain.RoyalMail.Models;
+
+public static class FileExtensionMethods
 {
-    using System;
-    using System.IO;
-    using Cavity.Models;
-
-    public static class FileExtensionMethods
+    public static BritishPostcode ToPostcode(this FileInfo file)
     {
-        public static BritishPostcode ToPostcode(this FileInfo file)
-        {
-            if (null == file)
-            {
-                throw new ArgumentNullException("file");
-            }
+        if (null == file)
+            throw new ArgumentNullException("file");
 
-            return file.RemoveExtension().Name;
-        }
+        return file.RemoveExtension().Name;
     }
 }

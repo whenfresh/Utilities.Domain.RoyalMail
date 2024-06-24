@@ -1,18 +1,17 @@
-﻿namespace Cavity.Models
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+
+using WhenFresh.Utilities.Core;
+
+public class Organization : ComparableObject
 {
-    using System;
+    public virtual string Department { get; set; }
 
-    public class Organization : ComparableObject
+    public virtual string Name { get; set; }
+
+    public override string ToString()
     {
-        public virtual string Department { get; set; }
-
-        public virtual string Name { get; set; }
-
-        public override string ToString()
-        {
-            return "{0}{1}{2}".FormatWith(Name,
-                                          string.IsNullOrEmpty(Department) ? string.Empty : Environment.NewLine,
-                                          Department);
-        }
+        return "{0}{1}{2}".FormatWith(Name,
+                                      string.IsNullOrEmpty(Department) ? string.Empty : Environment.NewLine,
+                                      Department);
     }
 }

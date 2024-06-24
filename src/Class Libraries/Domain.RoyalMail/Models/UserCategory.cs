@@ -1,30 +1,25 @@
-﻿namespace Cavity.Models
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+
+public static class UserCategory
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
+    private static readonly HashSet<IUserCategory> _categories = new(LoadUserCategories());
 
-    public static class UserCategory
+    public static IUserCategory Resolve(char code)
     {
-        private static readonly HashSet<IUserCategory> _categories = new HashSet<IUserCategory>(LoadUserCategories());
+        return _categories.FirstOrDefault(x => x.Code.Equals(code));
+    }
 
-        public static IUserCategory Resolve(char code)
-        {
-            return _categories.FirstOrDefault(x => x.Code.Equals(code));
-        }
+    private static IEnumerable<IUserCategory> LoadUserCategories()
+    {
+        var category = typeof(IUserCategory);
 
-        private static IEnumerable<IUserCategory> LoadUserCategories()
-        {
-            var category = typeof(IUserCategory);
-
-            return AppDomain
-                .CurrentDomain
-                .GetAssemblies()
-                .ToList()
-                .SelectMany(x => x.GetTypes())
-                .Where(x => !x.IsInterface)
-                .Where(category.IsAssignableFrom)
-                .Select(type => (IUserCategory)Activator.CreateInstance(type));
-        }
+        return AppDomain
+               .CurrentDomain
+               .GetAssemblies()
+               .ToList()
+               .SelectMany(x => x.GetTypes())
+               .Where(x => !x.IsInterface)
+               .Where(category.IsAssignableFrom)
+               .Select(type => (IUserCategory)Activator.CreateInstance(type));
     }
 }

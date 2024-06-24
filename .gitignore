@@ -41,4 +41,4 @@ Thumbs.db
 # file patterns
 *crunchproject*
 *crunchsolution*
-_Resharper*
+_Resharper***/.DS_Store

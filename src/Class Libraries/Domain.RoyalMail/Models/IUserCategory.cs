@@ -1,9 +1,8 @@
-﻿namespace Cavity.Models
-{
-    public interface IUserCategory
-    {
-        char Code { get; }
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
 
-        string Name { get; }
-    }
+public interface IUserCategory
+{
+    char Code { get; }
+
+    string Name { get; }
 }

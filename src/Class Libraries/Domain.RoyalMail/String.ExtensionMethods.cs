@@ -1,12 +1,11 @@
-﻿namespace Cavity
-{
-    using Cavity.Models;
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail;
 
-    public static class StringExtensionMethods
+using WhenFresh.Utilities.Domain.RoyalMail.Models;
+
+public static class StringExtensionMethods
+{
+    public static BritishPostcode ToPostcode(this string obj)
     {
-        public static BritishPostcode ToPostcode(this string obj)
-        {
-            return BritishPostcode.FromString(obj);
-        }
+        return BritishPostcode.FromString(obj);
     }
 }

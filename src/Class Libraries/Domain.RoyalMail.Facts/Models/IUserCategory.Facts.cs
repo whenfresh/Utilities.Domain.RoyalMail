@@ -1,52 +1,53 @@
-﻿namespace Cavity.Models
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts.Models;
+
+using Moq;
+using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Testing.Unit;
+using Xunit;
+
+public sealed class IUserCategoryFacts
 {
-    using Moq;
-    using Xunit;
-
-    public sealed class IUserCategoryFacts
+    [Fact]
+    public void a_definition()
     {
-        [Fact]
-        public void a_definition()
-        {
-            Assert.True(new TypeExpectations<IUserCategory>()
-                            .IsInterface()
-                            .Result);
-        }
+        Assert.True(new TypeExpectations<IUserCategory>()
+                    .IsInterface()
+                    .Result);
+    }
 
-        [Fact]
-        public void prop_Code()
-        {
-            const char expected = 'x';
+    [Fact]
+    public void prop_Code()
+    {
+        const char expected = 'x';
 
-            var category = new Mock<IUserCategory>();
-            category
-                .SetupGet(x => x.Code)
-                .Returns(expected)
-                .Verifiable();
+        var category = new Mock<IUserCategory>();
+        category
+            .SetupGet(x => x.Code)
+            .Returns(expected)
+            .Verifiable();
 
-            var actual = category.Object.Code;
+        var actual = category.Object.Code;
 
-            Assert.Equal(expected, actual);
+        Assert.Equal(expected, actual);
 
-            category.VerifyAll();
-        }
+        category.VerifyAll();
+    }
 
-        [Fact]
-        public void prop_Name()
-        {
-            const string expected = "Example";
+    [Fact]
+    public void prop_Name()
+    {
+        const string expected = "Example";
 
-            var category = new Mock<IUserCategory>();
-            category
-                .SetupGet(x => x.Name)
-                .Returns(expected)
-                .Verifiable();
+        var category = new Mock<IUserCategory>();
+        category
+            .SetupGet(x => x.Name)
+            .Returns(expected)
+            .Verifiable();
 
-            var actual = category.Object.Name;
+        var actual = category.Object.Name;
 
-            Assert.Equal(expected, actual);
+        Assert.Equal(expected, actual);
 
-            category.VerifyAll();
-        }
+        category.VerifyAll();
     }
 }

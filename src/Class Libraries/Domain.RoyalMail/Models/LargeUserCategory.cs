@@ -1,21 +1,8 @@
-﻿namespace Cavity.Models
-{
-    public sealed class LargeUserCategory : IUserCategory
-    {
-        public char Code
-        {
-            get
-            {
-                return 'L';
-            }
-        }
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
 
-        public string Name
-        {
-            get
-            {
-                return "Large";
-            }
-        }
-    }
+public sealed class LargeUserCategory : IUserCategory
+{
+    public char Code => 'L';
+
+    public string Name => "Large";
 }

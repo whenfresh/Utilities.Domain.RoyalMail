@@ -1,21 +1,8 @@
-﻿namespace Cavity.Models
-{
-    public sealed class ResidentialUserCategory : IUserCategory
-    {
-        public char Code
-        {
-            get
-            {
-                return 'R';
-            }
-        }
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
 
-        public string Name
-        {
-            get
-            {
-                return "Residential";
-            }
-        }
-    }
+public sealed class ResidentialUserCategory : IUserCategory
+{
+    public char Code => 'R';
+
+    public string Name => "Residential";
 }

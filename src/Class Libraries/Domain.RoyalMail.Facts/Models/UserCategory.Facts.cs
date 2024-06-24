@@ -1,39 +1,40 @@
-﻿namespace Cavity.Models
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts.Models;
+
+using System.Diagnostics.CodeAnalysis;
+using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Testing.Unit;
+using Xunit;
+
+public sealed class UserCategoryFacts
 {
-    using System.Diagnostics.CodeAnalysis;
-    using Xunit;
-
-    public sealed class UserCategoryFacts
+    [Fact]
+    public void a_definition()
     {
-        [Fact]
-        public void a_definition()
-        {
-            Assert.True(typeof(UserCategory).IsStatic());
-        }
+        Assert.True(typeof(UserCategory).IsStatic());
+    }
 
-        [Fact]
-        public void op_Resolve_char_whenLarge()
-        {
-            Assert.IsType<LargeUserCategory>(UserCategory.Resolve('L'));
-        }
+    [Fact]
+    public void op_Resolve_char_whenLarge()
+    {
+        Assert.IsType<LargeUserCategory>(UserCategory.Resolve('L'));
+    }
 
-        [Fact]
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonResidential", Justification = "This is not a single word.")]
-        public void op_Resolve_char_whenNonResidential()
-        {
-            Assert.IsType<NonResidentialUserCategory>(UserCategory.Resolve('N'));
-        }
+    [Fact]
+    [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonResidential", Justification = "This is not a single word.")]
+    public void op_Resolve_char_whenNonResidential()
+    {
+        Assert.IsType<NonResidentialUserCategory>(UserCategory.Resolve('N'));
+    }
 
-        [Fact]
-        public void op_Resolve_char_whenResidential()
-        {
-            Assert.IsType<ResidentialUserCategory>(UserCategory.Resolve('R'));
-        }
+    [Fact]
+    public void op_Resolve_char_whenResidential()
+    {
+        Assert.IsType<ResidentialUserCategory>(UserCategory.Resolve('R'));
+    }
 
-        [Fact]
-        public void op_Resolve_char_whenUnknown()
-        {
-            Assert.Null(UserCategory.Resolve('x'));
-        }
+    [Fact]
+    public void op_Resolve_char_whenUnknown()
+    {
+        Assert.Null(UserCategory.Resolve('x'));
     }
 }

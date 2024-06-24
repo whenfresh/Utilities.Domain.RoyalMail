@@ -1,15 +1,8 @@
-﻿namespace Cavity.Diagnostics
-{
-    using System.Diagnostics;
+﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Diagnostics;
 
-    internal static class Tracing
-    {
-        internal static TraceSwitch Is
-        {
-            get
-            {
-                return new TraceSwitch("Cavity.Domain.RoyalMail", string.Empty);
-            }
-        }
-    }
+using System.Diagnostics;
+
+internal static class Tracing
+{
+    internal static TraceSwitch Is => new("Cavity.Domain.RoyalMail", string.Empty);
 }
