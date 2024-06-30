@@ -189,7 +189,8 @@ public class BritishAddress : KeyStringDictionary
             buffer.Append(' ');
         }
 
-        foreach (var value in new[]
+        // ReSharper disable once RedundantExplicitArrayCreation - Postcode implict conversion not discovered by compiler
+        foreach (var value in new string[]
                                   {
                                       DependentStreet, MainStreet, DoubleDependentLocality, DependentLocality, PostTown, Postcode, TraditionalCounty
                                   }.Where(value => !string.IsNullOrEmpty(value)))
