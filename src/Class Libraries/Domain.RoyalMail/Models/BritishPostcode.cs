@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 using System.Xml;
-using WhenFresh.Utilities.Core;
+using WhenFresh.Utilities;
 using WhenFresh.Utilities.Diagnostics;
 
 public sealed class BritishPostcode : IComparable,

@@ -1,6 +1,6 @@
 ﻿namespace WhenFresh.Utilities.Models;
 
-using WhenFresh.Utilities.Core;
+using WhenFresh.Utilities;
 
 public class Organization : ComparableObject
 {

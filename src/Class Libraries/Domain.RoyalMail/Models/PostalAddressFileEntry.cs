@@ -4,9 +4,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 using System.Xml;
-using WhenFresh.Utilities.Core;
-using WhenFresh.Utilities.Core.Collections;
-using WhenFresh.Utilities.Data.Data;
+using WhenFresh.Utilities;
+using WhenFresh.Utilities.Collections;
+using WhenFresh.Utilities.Data;
 
 /// <summary>
 ///     Represents an entry in the Royal Mail Postal Address File.

@@ -2,7 +2,7 @@
 
 using System.ComponentModel;
 using System.Runtime.Serialization;
-using WhenFresh.Utilities.Core;
+using WhenFresh.Utilities;
 using WhenFresh.Utilities.Testing.Unit;
 using Xunit;
 
