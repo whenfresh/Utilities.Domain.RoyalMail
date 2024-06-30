@@ -1,9 +1,9 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+﻿namespace WhenFresh.Utilities.Models;
 
 using System.Diagnostics;
 using System.Xml;
 using WhenFresh.Utilities.Core;
-using WhenFresh.Utilities.Domain.RoyalMail.Diagnostics;
+using WhenFresh.Utilities.Diagnostics;
 
 public sealed class BritishPostcode : IComparable,
                                       IComparable<BritishPostcode>,

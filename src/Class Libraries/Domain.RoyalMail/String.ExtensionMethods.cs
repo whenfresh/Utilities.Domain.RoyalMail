@@ -1,6 +1,6 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail;
+﻿namespace WhenFresh.Utilities;
 
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 
 public static class StringExtensionMethods
 {

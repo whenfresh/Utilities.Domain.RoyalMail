@@ -1,4 +1,4 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Diagnostics;
+﻿namespace WhenFresh.Utilities.Diagnostics;
 
 using System.Diagnostics;
 

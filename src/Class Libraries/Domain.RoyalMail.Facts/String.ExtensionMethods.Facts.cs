@@ -1,6 +1,6 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts;
+﻿namespace WhenFresh.Utilities;
 
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 using Xunit;
 
 public sealed class StringExtensionMethodsFacts

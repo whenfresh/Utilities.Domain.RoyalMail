@@ -1,9 +1,8 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts.Data;
+﻿namespace WhenFresh.Utilities.Data;
 
 using WhenFresh.Utilities.Core.Collections;
 using WhenFresh.Utilities.Data.Data;
-using WhenFresh.Utilities.Domain.RoyalMail.Data;
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 using WhenFresh.Utilities.Testing.Unit;
 using Xunit;
 

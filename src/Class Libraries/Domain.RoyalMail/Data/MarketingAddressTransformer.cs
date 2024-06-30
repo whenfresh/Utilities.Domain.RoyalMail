@@ -1,8 +1,8 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Data;
+﻿namespace WhenFresh.Utilities.Data;
 
 using WhenFresh.Utilities.Core.Collections;
 using WhenFresh.Utilities.Data.Data;
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 
 public class MarketingAddressTransformer : ITransformData<MarketingAddress>
 {

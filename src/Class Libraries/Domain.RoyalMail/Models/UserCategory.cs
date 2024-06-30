@@ -1,4 +1,4 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+﻿namespace WhenFresh.Utilities.Models;
 
 public static class UserCategory
 {

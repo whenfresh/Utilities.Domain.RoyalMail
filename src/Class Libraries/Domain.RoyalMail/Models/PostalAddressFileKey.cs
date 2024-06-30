@@ -1,4 +1,4 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+﻿namespace WhenFresh.Utilities.Models;
 
 using System.ComponentModel;
 using System.Runtime.Serialization;

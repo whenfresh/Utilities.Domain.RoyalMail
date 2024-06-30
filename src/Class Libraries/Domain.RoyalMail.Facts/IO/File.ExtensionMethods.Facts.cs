@@ -1,8 +1,7 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts.IO;
+﻿namespace WhenFresh.Utilities.IO;
 
 using WhenFresh.Utilities.Core.IO;
-using WhenFresh.Utilities.Domain.RoyalMail.IO;
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 using Xunit;
 
 public sealed class FileExtensionMethodsFacts

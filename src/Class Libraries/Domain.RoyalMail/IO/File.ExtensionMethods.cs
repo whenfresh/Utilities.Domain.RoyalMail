@@ -1,7 +1,7 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.IO;
+﻿namespace WhenFresh.Utilities.IO;
 
 using WhenFresh.Utilities.Core.IO;
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
+using WhenFresh.Utilities.Models;
 
 public static class FileExtensionMethods
 {

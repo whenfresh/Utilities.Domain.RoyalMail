@@ -1,4 +1,4 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Models;
+﻿namespace WhenFresh.Utilities.Models;
 
 public interface IUserCategory
 {

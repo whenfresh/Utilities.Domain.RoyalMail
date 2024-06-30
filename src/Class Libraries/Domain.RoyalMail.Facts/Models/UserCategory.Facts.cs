@@ -1,7 +1,6 @@
-﻿namespace WhenFresh.Utilities.Domain.RoyalMail.Facts.Models;
+﻿namespace WhenFresh.Utilities.Models;
 
 using System.Diagnostics.CodeAnalysis;
-using WhenFresh.Utilities.Domain.RoyalMail.Models;
 using WhenFresh.Utilities.Testing.Unit;
 using Xunit;
 
