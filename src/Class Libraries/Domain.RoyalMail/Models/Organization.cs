@@ -1,7 +1,5 @@
 ﻿namespace WhenFresh.Utilities.Models;
 
-using WhenFresh.Utilities;
-
 public class Organization : ComparableObject
 {
     public virtual string Department { get; set; }

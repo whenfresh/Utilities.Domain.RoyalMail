@@ -1,6 +1,5 @@
 ﻿namespace WhenFresh.Utilities.IO;
 
-using WhenFresh.Utilities.IO;
 using WhenFresh.Utilities.Models;
 using Xunit;
 

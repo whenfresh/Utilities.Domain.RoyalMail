@@ -1,7 +1,6 @@
 ﻿namespace WhenFresh.Utilities.Data;
 
 using WhenFresh.Utilities.Collections;
-using WhenFresh.Utilities.Data;
 using WhenFresh.Utilities.Models;
 using WhenFresh.Utilities.Testing.Unit;
 using Xunit;

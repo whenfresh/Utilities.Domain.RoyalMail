@@ -2,7 +2,6 @@
 
 using System.ComponentModel;
 using System.Runtime.Serialization;
-using WhenFresh.Utilities;
 #if NET20 || NET35
     using System.Security.Permissions;
 #endif

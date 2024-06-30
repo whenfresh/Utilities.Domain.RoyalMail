@@ -3,7 +3,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using System.Text;
-using WhenFresh.Utilities;
 using WhenFresh.Utilities.Collections;
 
 [SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification = "This naming is intentional.")]
@@ -190,7 +189,7 @@ public class BritishAddress : KeyStringDictionary
             buffer.Append(' ');
         }
 
-        foreach (var value in new string[]
+        foreach (var value in new[]
                                   {
                                       DependentStreet, MainStreet, DoubleDependentLocality, DependentLocality, PostTown, Postcode, TraditionalCounty
                                   }.Where(value => !string.IsNullOrEmpty(value)))
